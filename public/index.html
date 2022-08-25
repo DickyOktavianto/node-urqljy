@@ -10,7 +10,37 @@
   <body>
     <main>
       <h1>Hai Object</h1>
+
+      <form action="" id="user_form" autocomplete="off">
+        <label for="ussername">Ussername </label>
+        <input type="text" id="ussername" placeholder="Nama" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Email" required />
+
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Password" required />
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" placeholder="Phone" required />
+
+        <label for="married">Married</label>
+        <select name="" id="married">
+          <option value="true">Sudah</option>
+          <option value="false">Belum</option>
+        </select>
+
+        <label for="addres">Alamat</label>
+        <textarea
+          name=""
+          id="addres"
+          required
+          placeholder="Isi guys"
+        ></textarea>
+        <button type="submit">Submit</button>
+      </form>
     </main>
     <script src="./main.js"></script>
+    <script src="./handleuser.js"></script>
   </body>
 </html>
