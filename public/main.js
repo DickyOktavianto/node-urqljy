@@ -33,3 +33,26 @@ let { ussername, email } = userDEtail;
 // console.info(ussername, email);
 console.info('ussername: ', ussername);
 console.info(userDEtail.ussername);
+
+// Array
+let hoby = ['Code', 'Bola', 123, 'catur', 'nonton'];
+let age = [3, 32, 33, 34];
+let myData = ['dicky', 34, true, { street: 'jkrta', no: 79 }];
+let dataMahasiswa = [
+  {
+    nama: 'dicky',
+    nim: 2003015118,
+  },
+  {
+    nama: 'oktv',
+    nim: 1234,
+  },
+];
+
+// hoby.push('game'); // menambahkan variabel
+hoby.unshift('game'); //ini jadi pertama gamenya
+
+console.info(myData);
+
+// console.info(hoby[3]);
+// console.info(hoby[1]);
