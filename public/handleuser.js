@@ -4,6 +4,19 @@ let user_form = document.getElementById('user_form');
 // array
 let dataSiswa = [];
 
+// function yang akan selalu berjalan ketika page reload
+window.onload = function () {
+  // kita akan chek apakah ada loca; stroage dengan nama dataSiswa
+  let stroageData = localStorage.getItem('dataSiswa');
+
+  if (!stroageData) {
+    localStorage.setItem('dataSiswa', '[]');
+    return;
+  }
+
+  dataSiswa = JSON.parse(stroageData);
+};
+
 // tambahkan event listenernya
 user_form.addEventListener('submit', function (event) {
   // stop form dari reload
@@ -34,5 +47,5 @@ user_form.addEventListener('submit', function (event) {
   // console.info(dataSiswa);
 
   //input data ke local stroage
-  localStorage.setItem('dataSiswa', dataSiswa);
+  localStorage.setItem('dataSiswa', JSON.stringify(dataSiswa));
 });
