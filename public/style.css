@@ -15,7 +15,7 @@ body {
   width: 300px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   padding: 20px;
   background-color: white;
   box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.404);
@@ -33,7 +33,7 @@ body {
   padding: 0 8px;
   font-family: inherit;
   border: 1px solid rgba(153, 153, 153);
-  border-radius: 10px;
+  border-radius: 20px;
   width: 100%;
 }
 #user_form textarea {
